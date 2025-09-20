@@ -1,0 +1,2 @@
+# array-sorting-algorithms-cpp
+This repository contains simple C++ implementations of fundamental sorting algorithms.  It is designed for beginners who want to understand how sorting works step by step.  Currently included:  - Bubble Sort - Selection Sort - Binary Insertion Sort  Each program allows the user to input an array and see the sorted result.  The code is clean, beginner-friendly, and ready to compile with g++.
