@@ -15,7 +15,8 @@ int main()
 	{
 		cin >> arr[i];
 	}
-	
+
+	bool isSwap = false;
 	for(int i = 0; i < n - 1; i++)
 	{
 		for(int j = 0; j < n - i - 1; j++)
@@ -23,8 +24,15 @@ int main()
 			if(arr[j] > arr[j+1])
 			{
 				swap(arr[j], arr[j+1]);
+				isSwap = true;
 			}
 		}
+
+		if(!isSwap)
+		{
+			break;
+		}
+			
 	}
 	
 	cout << "Sorted Array { ";
@@ -34,3 +42,4 @@ int main()
 	}
 	cout << "}" << endl;
 }
+
