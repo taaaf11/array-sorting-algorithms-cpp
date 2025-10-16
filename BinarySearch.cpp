@@ -24,6 +24,8 @@ int binarySearch(int arr[], int size, int value)
 			right = mid + 1;
 		}
 	}
+
+	return -1;
 }
 
 
@@ -37,6 +39,12 @@ int main()
 	cin >> value;
 	
 	int result = binarySearch(arr, 6, value); 
-	
-	cout << "Result : " << result << endl;
+
+	if (result == -1) {
+		cout << key << " is not in the array." << endl;
+	}
+	else {
+		cout << "Result : " << result << endl;
+	}
 }
+
